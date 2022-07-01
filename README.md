@@ -1,27 +1,17 @@
-# A11yP1
+# Por que pensar em acessibilidade?
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+De acordo com censo do IBGE realizado em 2010, cerca de 24% da população brasileira possui algum 
+graud e dificuldade em pelo menos um das habilidade investigadas (enxergar, ouvir, caminhar ou subir degraus).
 
-## Development server
+[Fonte](https://educa.ibge.gov.br/jovens/conheca-o-brasil/populacao/20551-pessoas-com-deficiencia.html)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Tendo em vista que esse número atualmente pode ser muito maior, temos que nos preocupar sim em acessibilidade
+para que possamos incluir essas pessoas no mundo digital e tornar sua experiência tão boa quanto para as pessoas
+que não possuem a necessidade de um ambiente mais acessível.
 
-## Code scaffolding
+[Diretrizes da W3C sobre acessibilidade](https://www.w3.org/Translations/WCAG20-pt-br/WCAG20-pt-br-20141024/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Conteúdo do repositório
+Este repositório tem como intuito utilizar na prática boas práticas de desenvolvimento de layouts acessíveis,
+podendo ser utilizado para diversos sistemas web. Todo conteúdo desenvolvido tem como base
+os cursos de acessíbilidade realizados na [Alura](https://www.alura.com.br/)
