@@ -1,9 +1,18 @@
-<div class="button-group">
-    <label class="label">{{label}}</label>
-    <button (click)="activate(options.YES)" class="button-group__button button_yes" 
+<div 
+role="radiogroup"
+[attr.aria-labelledby]="id"
+class="button-group">
+    <label [attr.id]="id" class="label">{{label}}</label>
+    <button 
+    role="radio"
+    [attr.aria-checked]="value === options.YES"
+    (click)="activate(options.YES)" class="button-group__button button_yes" 
     [ngClass]="{'button-pressed' : value === options.YES}"
     type="button">Yes</button>
-    <button (click)="activate(options.NO)" class="button-group__button button_no"
+    <button 
+    role="radio"
+    [attr.aria-checked]="value === options.NO"
+    (click)="activate(options.NO)" class="button-group__button button_no"
     [ngClass]="{'button-pressed' : value === options.NO}"
     type="button">No</button>
 </div>
