@@ -1,4 +1,33 @@
-<div 
+<!-- Código utilizando tags semânticas do HTML -->
+<div
+    class="button-group"
+    role="radiogroup"
+    [attr.aria-label]="label">
+    <label>{{label}}</label>
+    <div class="radio">
+        <input
+        [attr.id]="id + 'yes'"
+        type="radio"
+        [attr.name]="id"
+        [attr.checked]="value === options.YES"
+        (change)="activate(options.YES)">
+        <label [attr.for]="id + 'yes'" class="button-group__button button_yes">Yes</label>
+    </div>
+    <div class="radio">
+        <input
+        [attr.id]="id + 'no'"
+        type="radio"
+        [attr.name]="id"
+        [attr.checked]="value === options.NO"
+        (change)="activate(options.NO)">
+        <label [attr.for]="id + 'no'" class="button-group__button button_no">No</label>
+    </div>
+</div>
+
+
+<!-- Abaixo temos um exemplo de código que não utilizou tags semânticas do HTML
+    
+    <div 
 appKm
 role="radiogroup"
 [attr.aria-labelledby]="id"
@@ -8,6 +37,7 @@ class="button-group">
     appKmItem
     (focused)="activate(options.YES)"
     role="radio"
+    [attr.disabled]="disabled ? disabled : null"
     [attr.tabindex]="value === options.YES || value === null ? 0 : -1"
     [attr.aria-checked]="value === options.YES"
     (click)="activate(options.YES)" class="button-group__button button_yes" 
@@ -17,9 +47,10 @@ class="button-group">
     appKmItem
     (focused)="activate(options.NO)"
     role="radio"
+    [attr.disabled]="disabled ? disabled : null"
     [attr.tabindex]="value === options.NO ? 0 : -1"
     [attr.aria-checked]="value === options.NO"
     (click)="activate(options.NO)" class="button-group__button button_no"
     [ngClass]="{'button-pressed' : value === options.NO}"
     type="button">No</button>
-</div>
+</div> -->
