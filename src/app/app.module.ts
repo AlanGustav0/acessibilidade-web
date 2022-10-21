@@ -6,6 +6,7 @@ import { YesNoButtonGroupModule } from './shared/components/yes-no-button-group/
 import { ReactiveFormsModule } from '@angular/forms';
 import { DisabledControlModule } from './shared/directives/disabled-control/disabled-control.module';
 import { ModalComponent } from './shared/components/modal/modal.component';
+import { ModalService } from './shared/components/modal/services/modal.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ModalComponent } from './shared/components/modal/modal.component';
     ReactiveFormsModule,
     DisabledControlModule
   ],
-  providers: [],
+  providers: [ModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
