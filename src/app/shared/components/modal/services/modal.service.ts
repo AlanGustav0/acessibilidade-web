@@ -8,7 +8,7 @@ export class ModalService {
 
   private componentFactory: ComponentFactory<ModalComponent>;
 
-  constructor(componentFactoryResolver: ComponentFactoryResolver, private readonly _injector: Injector,private _bodyInjectorService:BodyInjectorService) {
+  constructor(componentFactoryResolver: ComponentFactoryResolver, private _injector: Injector,private _bodyInjectorService:BodyInjectorService) {
     this.componentFactory = componentFactoryResolver.resolveComponentFactory(ModalComponent);
   }
 
@@ -25,11 +25,9 @@ export class ModalService {
 }
 
 export class ModalRef {
-
   constructor(private componentRef: ComponentRef<ModalComponent>) { }
 
   public close(): void {
-    console.log('chamou')
     this.componentRef.destroy();
   }
 }

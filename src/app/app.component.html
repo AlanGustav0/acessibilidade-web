@@ -15,27 +15,26 @@
     <h2>Modal Acessível</h2>
     <p>Bem vindo ao modal acessível de teste</p>
     <button class="btn btn-primary mb-4" type="button" (click)="show()">Abrir o modal</button>
-
-    <ng-template #modal>
-      <div class="mb-4">
-        <label for="firstName" class="form-label">Nome</label>
-        <input
-          id="firstName"
-          class="form-control"
-          [(value)]="firstName"
-          type="text"
-        />
-
-        <label for="surname" class="form-label">Sobrenome</label>
-        <input id="surname" class="form-control" type="text" />
-
-        <label for="age" class="form-label">Idade</label>
-        <input id="age" class="form-control" type="text" />
-      </div>
-
-      <div class="btn-group">
-        <button class="btn btn-success" type="button">Enviar</button>
-        <button class="btn btn-secondary" type="button" (click)="modalRef.close()">Cancelar</button>
-      </div>
-    </ng-template>
 </main>
+<ng-template #modal>
+  <div class="mb-4">
+    <label for="firstName" class="form-label">Nome</label>
+    <input
+      id="firstName"
+      class="form-control"
+      [(value)]="firstName"
+      type="text"
+    />
+
+    <label for="surname" class="form-label">Sobrenome</label>
+    <input id="surname" class="form-control" type="text" />
+
+    <label for="age" class="form-label">Idade</label>
+    <input id="age" class="form-control" type="text" />
+  </div>
+
+  <div class="btn-group">
+    <button class="btn btn-success" type="button">Enviar</button>
+    <button class="btn btn-secondary" type="button" (click)="modalRef.close()">Cancelar</button>
+  </div>
+</ng-template>

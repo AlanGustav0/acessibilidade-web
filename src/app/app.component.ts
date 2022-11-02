@@ -14,6 +14,7 @@ export class AppComponent {
   public firstName = 'Pedro';
   public modalRef: ModalRef;
 
+
   constructor(formBuilder: FormBuilder, private modalService: ModalService) {
     this.form = formBuilder.group({
       yesNoAnswer: [{
@@ -27,7 +28,7 @@ export class AppComponent {
   }
 
   public show(): void {
-    this.modalService.open({
+    this.modalRef = this.modalService.open({
       templateRef: this.modalTemplateRef,
       title: 'User Details'
     })
