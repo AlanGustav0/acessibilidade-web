@@ -1,6 +1,7 @@
 import { Component, TemplateRef, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ModalRef, ModalService } from './shared/components/modal/services/modal.service';
+import { ModalRef } from './shared/components/modal/models/modal-ref';
+import { ModalService } from './shared/components/modal/services/modal.service';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ export class AppComponent {
   public form: FormGroup = null;
   public firstName = 'Pedro';
   public modalRef: ModalRef;
+  public info = false;
 
 
   constructor(formBuilder: FormBuilder, private modalService: ModalService) {

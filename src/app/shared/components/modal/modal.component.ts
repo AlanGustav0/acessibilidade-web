@@ -1,6 +1,8 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { fade } from '../../animations/fade';
 import { ModalConfig } from './interfaces/modal-config.interface';
+import { ModalRef } from './models/modal-ref';
+
 
 @Component({
   selector: 'app-modal',
@@ -11,5 +13,6 @@ import { ModalConfig } from './interfaces/modal-config.interface';
 export class ModalComponent {
   @HostBinding('@fade') fade = true;
   public config: ModalConfig;
+  public modalRef:ModalRef;
 
 }
